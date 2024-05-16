@@ -1,9 +1,9 @@
-import type { Event } from '@event-driven-io/emmett';
+import type {Event} from '@event-driven-io/emmett';
 
 export type UserNotifiedEvent = Event<
     'UserNotifiedEvent',
     {
-		email:string
-		activationCode:string
+        email: string
+        activationCode: string
     }
 >;

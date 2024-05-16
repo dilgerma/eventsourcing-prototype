@@ -4,7 +4,7 @@ import {UserNotifiedEvent} from "@/app/components/events/UserRegistrationAggrega
 import {UserRegisteredEvent} from "@/app/components/events/UserRegistrationAggregate/UserRegisteredEvent"
 
 export type UserRegistrationAggregateEvents =
-    PasswordChangedEvent|
-	UserActivatedEvent|
-	UserNotifiedEvent|
-	UserRegisteredEvent
+    PasswordChangedEvent |
+    UserActivatedEvent |
+    UserNotifiedEvent |
+    UserRegisteredEvent

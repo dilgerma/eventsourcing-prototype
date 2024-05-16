@@ -22,7 +22,8 @@ export default function SliceViews(props: { views?: ViewSelection[], processors?
                         className={selectedView?.viewName == viewSelection.viewName ? "view is-active" : "view"}
                         onClick={() => {
                             setSelectedProcessor(undefined)
-                            setSelectedView(props.views?.find(it => it.viewName == viewSelection.viewName))}}>
+                            setSelectedView(props.views?.find(it => it.viewName == viewSelection.viewName))
+                        }}>
                         <a>
                             <div>
                                 <div><b>{viewSelection.slice}</b></div>
@@ -42,23 +43,23 @@ export default function SliceViews(props: { views?: ViewSelection[], processors?
                             setSelectedView(undefined)
                             setSelectedProcessor(props.processors?.find(it => it.processorName == processorSelection.processorName))
                         }}>
-                            <a>
+                        <a>
 
                             <div>
-                            <div><b>{processorSelection.slice}</b></div>
-                            <div>{processorSelection.processorType}</div>
-                        </div>
+                                <div><b>{processorSelection.slice}</b></div>
+                                <div>{processorSelection.processorType}</div>
+                            </div>
                         </a>
-                        </li>)}
-</ul>
-</div>
-{
-    viewToRender() ? React.createElement(viewToRender()!!) : <span/>
-}
-</div>
+                    </li>)}
+                </ul>
+            </div>
+            {
+                viewToRender() ? React.createElement(viewToRender()!!) : <span/>
+            }
+        </div>
 
-)
-;
+    )
+        ;
 }
 
 

@@ -1,5 +1,9 @@
 import {Processor} from '@/app/core/types';
-import {initialState, loadFromStream, Registration} from '@/app/components/slices/registeredusers/RegisteredUsersReadModel';
+import {
+    initialState,
+    loadFromStream,
+    Registration
+} from '@/app/components/slices/registeredusers/RegisteredUsersReadModel';
 import {
     handleSendActicationLinkCommand,
     SendActicationLinkCommand

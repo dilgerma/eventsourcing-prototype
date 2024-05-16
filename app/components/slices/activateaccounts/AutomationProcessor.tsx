@@ -17,7 +17,7 @@ export default function AutomationProcessor(props: any) {
                     <link rel="icon" href="/favicon.ico"/>
                 </Head>
                 <main>
-                    <a onClick={()=>ActivateAccountProcessor.process()}>Starte Processor</a>
+                    <a onClick={() => ActivateAccountProcessor.process()}>Starte Processor</a>
                 </main>
             </div>
         </div>

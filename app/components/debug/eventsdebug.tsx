@@ -42,7 +42,8 @@ export function DebugEvents(props: any) {
                        onChange={() => setShowEvents(!showEvents)}/>
                 <div id={"uuid"}>{currentUUID}</div>
                 <button onClick={() => setCurrentUUID(v4())} className={"button"}>UUID</button>
-                <div onClick={() => CopyToClipboard("uuid")} className={"button"}><i className="fa-regular fa-copy"></i></div>
+                <div onClick={() => CopyToClipboard("uuid")} className={"button"}><i className="fa-regular fa-copy"></i>
+                </div>
             </div>
             <hr/>
             <div>

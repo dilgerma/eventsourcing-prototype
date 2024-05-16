@@ -19,10 +19,10 @@ export default function Screen(props: any) {
                 </Head>
                 <main>
                     <CommandSelection commands={[{
-                    "command":"RegisterUserCommand",
-                    "handler": handleRegisterUserCommand ,
-                    "schema": RegisterUserCommandSchema
-                }]}/>
+                        "command": "RegisterUserCommand",
+                        "handler": handleRegisterUserCommand,
+                        "schema": RegisterUserCommandSchema
+                    }]}/>
                 </main>
             </div>
         </div>

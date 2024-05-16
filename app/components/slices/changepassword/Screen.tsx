@@ -19,10 +19,10 @@ export default function Screen(props: any) {
                 </Head>
                 <main>
                     <CommandSelection commands={[{
-                    "command":"ChangePasswordCommand",
-                    "handler": handleChangePasswordCommand ,
-                    "schema": ChangePasswordCommandSchema
-                }]}/>
+                        "command": "ChangePasswordCommand",
+                        "handler": handleChangePasswordCommand,
+                        "schema": ChangePasswordCommandSchema
+                    }]}/>
                 </main>
             </div>
         </div>
